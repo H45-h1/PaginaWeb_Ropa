@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuidado con el Gato</title>
+    <script src="https://cdn.tailwindcss.com" &gt;></script>
+  </head>
+  <body class="box-border bg-violet-100 h-screen">
+    <header
+      class="sticky top-0 z-50 bg-fuchsia-200 font-bold text-pink-950 shadow-lg"
+    >
+      <div
+        class="max-w-screen-xl mx-auto px-3 h-12 md:h-14 flex items-center justify-between relative"
+      >
+        <a href="../index.html" class="flex items-center gap-2 min-w-0">
+          <img
+            src="../img/logo_gato.png"
+            class="h-8 w-8 md:h-10 md:w-10 object-contain"
+            alt="Logo"
+          />
+          <span class="text-base md:text-2xl font-semibold"
+            >Cuidado con el Gato</span
+          >
+        </a>
+
+        <div class="flex items-center gap-1">
+          <!-- Menú de escritorio -->
+          <nav class="hidden md:block" aria-label="Principal">
+            <ul class="flex items-center gap-8 text-base">
+              <li>
+                <a
+                  href="../index.html"
+                  class="py-1 px-2 rounded hover:bg-fuchsia-100"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="producto.html"
+                  class="py-1 px-2 rounded hover:bg-fuchsia-100"
+                  >Productos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contacto.html"
+                  class="py-1 px-2 rounded hover:bg-fuchsia-100"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Carrito: siempre visible -->
+          <a
+            href="cart.html"
+            aria-label="Carrito"
+            class="inline-flex items-center gap-1 py-1 px-2 rounded hover:bg-fuchsia-100"
+          >
+            <img
+              src="../img/carrito.png"
+              alt=""
+              class="h-5 w-5 md:h-6 md:w-6 object-contain"
+            />
+            <span id="cuenta-carrito">0</span>
+          </a>
+
+          <!-- Botón hamburguesa (solo móvil) -->
+          <button
+            id="btn-menu"
+            type="button"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="menu-movil"
+            class="md:hidden p-2 rounded hover:bg-fuchsia-100"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              viewBox="0 0 24 24"
+            >
+              <path d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Menú móvil: desplegable encima del contenido, no lo empuja -->
+        <nav
+          id="menu-movil"
+          class="hidden md:hidden absolute top-full inset-x-0 bg-fuchsia-200 border-t border-pink-950/15 shadow-lg"
+          aria-label="Principal móvil"
+        >
+          <ul class="flex flex-col py-1">
+            <li>
+              <a
+                href="../index.html"
+                class="block px-5 py-3 hover:bg-fuchsia-100"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                href="producto.html"
+                class="block px-5 py-3 hover:bg-fuchsia-100"
+                >Productos</a
+              >
+            </li>
+            <li>
+              <a
+                href="contacto.html"
+                class="block px-5 py-3 hover:bg-fuchsia-100"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="p-6">
+      <h2
+        class="text-5xl text-pink-900 text-center border-y-2 border-pink-950 p-3 my-10"
+      >
+        Sobre Nosotros
+      </h2>
+      <div
+        class="flex justify-center my-10 border-b-2 border-fuchsia-200 mb-20"
+      >
+        <div class="flex flex-col mr-4 my-10">
+          <img
+            class="rounded-full w-96 h-96 mb-10"
+            src="../img/Mimikyu.jpg"
+            alt="Foto mimikyu"
+          />
+          <p
+            class="text-[1rem] font-bold text-pink-900 text-align:center m-auto"
+          >
+            YIN LAUREN ROLÓN MENDOZA
+          </p>
+        </div>
+        <p class="w-2/3 text-align:justify lg:text-2xl">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic quam nam
+          iusto! Quasi, assumenda? Consequuntur possimus delectus eos ullam
+          itaque voluptatum harum, nulla, quisquam quaerat illum voluptate sint
+          ut, facere voluptates eaque ad fugit cum dolore corporis quo at
+          molestiae reiciendis repudiandae. Animi dolorum numquam, ea commodi
+          ipsum ex? Quidem?
+        </p>
+      </div>
+
+      <div
+        class="flex justify-center my-10 border-b-2 border-fuchsia-200 mb-20"
+      >
+        <p class="w-2/3 text-align:justify lg:text-2xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsa
+          sapiente at expedita vel dolorum cumque assumenda eveniet
+          perspiciatis, laboriosam nemo eum voluptas consectetur nulla
+          aspernatur incidunt laudantium nisi, debitis magni atque ut blanditiis
+          dicta? Explicabo tenetur, cupiditate ducimus ipsam officiis incidunt
+          earum corporis possimus eius eaque expedita reprehenderit ea!
+        </p>
+
+        <div class="flex flex-col ml-4 my-10">
+          <img
+            class="rounded-full w-96 h-96 mb-10"
+            src="../img/Beca.jpg"
+            alt="Gato gordo"
+          />
+          <p
+            class="text-[1rem] font-bold text-pink-900 text-align:center m-auto"
+          >
+            REBECCA SARA VAZQUEZ LOPEZ
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex justify-center my-10 border-b-2 border-fuchsia-200 mb-20"
+      >
+        <div class="flex flex-col mr-4 my-10">
+          <img
+            class="rounded-full w-96 h-96 mb-10"
+            src="../img/Michel.png"
+            alt="Foto Michel"
+          />
+          <p
+            class="text-[1rem] font-bold text-pink-900 text-align:center m-auto"
+          >
+            MICHEL MARBAN VALENZUELA
+          </p>
+        </div>
+        <p class="w-2/3 text-align:justify lg:text-2xl">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem vitae
+          accusantium, fuga quibusdam repellendus aliquid aspernatur nam error
+          labore, iure architecto magni et deleniti libero recusandae provident
+          est necessitatibus sapiente excepturi, distinctio fugiat illum.
+          Explicabo vel eius vitae repudiandae, dolores ipsum sapiente animi
+          tempore sit voluptatibus laudantium ad adipisci perspiciatis.
+        </p>
+      </div>
+
+      <div
+        class="flex justify-center my-10 border-b-2 border-fuchsia-200 mb-20"
+      >
+        <p class="w-2/3 text-align:justify lg:text-2xl">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt,
+          animi blanditiis accusamus voluptatem dolore voluptas deleniti neque
+          molestiae. Nemo consectetur beatae iste, natus voluptas minus magnam!
+          Corrupti, quae fuga culpa dolorem, quas quibusdam voluptatum
+          necessitatibus vel aliquam, obcaecati aliquid beatae sequi officiis
+          cum doloremque rem? Nam at sunt magnam ex.
+        </p>
+
+        <div class="flex flex-col ml-4 my-10">
+          <img
+            class="rounded-full w-96 h-96"
+            src="../img/Miraidon.jpg"
+            alt="Foto Jordan"
+          />
+          <p
+            class="text-[1rem] font-bold text-pink-900 text-align:center m-auto"
+          >
+            JORDAN ADRIAN MIRAMONTES GUTIERREZ
+          </p>
+        </div>
+      </div>
+
+      <div class="">
+        <h3 class="text-2xl font-bold text-pink-950 mb-1">¿Tienes dudas acerca de tu envío o algún pedido?</h3>
+        <p class="text-pink-900 mb-6">Escríbenos aquí abajo y te respondemos.</p>
+        <p class="font-bold text-pink-900">Ingresa tu nombre:</p>
+        <input
+          type="text"
+          id="Nombre"
+          class="border-black border-2 px-2 py-1"
+          placeholder="Ingresa tu nombre..."
+        /><br /><br />
+        <p class="font-bold text-pink-900">Ingresa tus apellidos:</p>
+        <input
+          type="text"
+          class="border-black border-2 px-2 py-1"
+          id="Apellidos"
+          placeholder="Ingresa tus apellidos..."
+        /><br /><br />
+        <p class="font-bold text-pink-900">Ingresa tu correo electrónico:</p>
+        <input
+          class="border-black border-2 w-[20rem] px-2 py-1"
+          type="email"
+          id="Correo"
+          placeholder="Ingresa tu correo electrónico..."
+        /><br /><br />
+        <p class="font-bold text-pink-900">Ingresa tu mensaje:</p>
+        <textarea
+          class="w-full h-20 border-black border-2 px-2 py-1"
+          id="Mensaje"
+          placeholder="Ingresa tu mensaje..."
+        ></textarea
+        ><br /><br />
+
+        <button
+          class="bg-pink-500 hover:bg-pink-700 text-white font-semibold px-4 py-2 rounded-lg cursor-pointer transition duration-300"
+          id="boton-enviar"
+        >
+          ENVIAR
+        </button>
+        <button
+          class="bg-pink-900 hover:bg-pink-500 text-white font-semibold px-4 py-2 rounded-lg cursor-pointer transition duration-300"
+          id="boton-reiniciar"
+        >
+          REINICIAR
+        </button>
+        <br /><br />
+        <p id="RESPUESTA"></p>
+      </div>
+    </main>
+    <footer class="p-5 border-t-2 border-t-pink-950 text-center">
+      <p>Todos los derechos reservados &copy;2026 Cuidado Con el Gato</p>
+    </footer>
+    <script src="../js/cartService.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.2/flowbite.min.js"></script>
+    <script>
+      const btnMenu = document.getElementById("btn-menu");
+      const menuMovil = document.getElementById("menu-movil");
+      btnMenu.addEventListener("click", () => {
+        const abierto = menuMovil.classList.toggle("hidden") === false;
+        btnMenu.setAttribute("aria-expanded", abierto);
+      });
+    </script>
+    <script>
+      let CampoNombre = document.querySelector("#Nombre");
+      let CampoApellidos = document.querySelector("#Apellidos");
+      let CampoCorreo = document.querySelector("#Correo");
+      let CampoMensaje = document.querySelector("#Mensaje");
+
+      let BotonEnviar = document.querySelector("#boton-enviar");
+      let BotonReiniciar = document.querySelector("#boton-reiniciar");
+
+      let Respuesta = document.querySelector("#RESPUESTA");
+
+      BotonEnviar.addEventListener("click", () => {
+        const Nombre = CampoNombre.value.trim();
+        const Apellidos = CampoApellidos.value.trim();
+        const Correo = CampoCorreo.value.trim();
+        const Mensaje = CampoMensaje.value.trim();
+
+        // Validar campos vasios
+        if (
+          Nombre === "" ||
+          Apellidos === "" ||
+          Correo === "" ||
+          Mensaje === ""
+        ) {
+          Respuesta.innerHTML = `
+            <div class="p-3 rounded-lg bg-red-100 border border-red-600 text-red-800 font-semibold">
+                Por favor, llena todos los campos antes de enviar.
+            </div>`;
+          return;
+        }
+
+        Respuesta.innerHTML = `
+        <div class="p-4 rounded-lg bg-fuchsia-200 border border-pink-900 text-pink-950">
+            <h3 class="font-bold text-lg">¡Mensaje enviado, ${Nombre} ${Apellidos}!</h3>
+            <p>Gracias por escribirnos. Te responderemos pronto a: <strong>${Correo}</strong></p>
+        </div>`;
+
+        CampoNombre.value = "";
+        CampoApellidos.value = "";
+        CampoCorreo.value = "";
+        CampoMensaje.value = "";
+        CampoNombre.focus();
+      });
+
+      BotonReiniciar.addEventListener("click", () => {
+        CampoNombre.value = "";
+        CampoApellidos.value = "";
+        CampoCorreo.value = "";
+        CampoMensaje.value = "";
+        Respuesta.innerHTML = "";
+        CampoNombre.focus();
+      });
+    </script>
+  </body>
+</html>
